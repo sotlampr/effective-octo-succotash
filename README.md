@@ -1,3 +1,15 @@
+# Time-series solution
+
+See `script.py` for a simple exploration of time-series-based solution. The
+problem is predicting the power output in the next half-hour period, given the
+real history.
+
+3 approaches:
+  - Rolling mean, min max, MAE: 0.1259
+  - Autoregressive (regression on previous targets), MAE: 0.561
+  - Combined, MAE: 0.553
+
+
 # Some comments
 
 - Missing values should be interpolated beforehand using before/after values
